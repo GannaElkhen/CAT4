@@ -1,33 +1,33 @@
 #include <iostream>
 using namespace std;
 
+int n,s=0,sum=0;
+int palandriom(int a[]){
+int b[n];
+for(int i=n-1;i>=0;i--){
 
-double SUm(double a,double b){
-    return a+b;
+   b[i] =a[s];
+   s++;
 }
-double SUbtract(double a,double b){
-    return a-b;
- }
- double DIvide(double a,double b){
-    return a/b;
+for(int i=0;i<n;i++){
+    if(b[i]==a[i])
+sum+=1;
 }
-double MUltiply(double a,double b){
-    return a*b;
+if(sum==n)
+cout<<"Yes,it is a palandirom array ";
+else
+cout<<"No,it is  not a palandirom array";
+return 0;
 }
 
 
 int main() {
-    double a,b;
-    cin >>a>>b;
-    if((a<1 && a>5) || (b<1 && b>5 ))
-        cout<<"Error";
-    else{
+  cin>>n;
+ int a[n];
+for(int i=0;i<n;i++){
+    cin>>a[i];
+}
 
-        SUm(a,b);
-        SUbtract(a,b);
-        MUltiply(a,b);
-        DIvide(a,b);
-    }
-
+palandriom(a);
     return 0;
 }
