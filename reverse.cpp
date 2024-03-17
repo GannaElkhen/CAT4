@@ -3,7 +3,7 @@ using namespace std;
 #include <bits/stdc++.h>
 
 void reverse(string s){int n=0;
-    int a=size(s);
+    int a=s.size();
     char A[a];
     for(int i=a-1;i>=0;i--){
         A[i]=s[n];
