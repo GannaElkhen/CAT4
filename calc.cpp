@@ -23,10 +23,10 @@ int main() {
         cout<<"Error";
     else{
 
-        SUm(a,b);
-        SUbtract(a,b);
-        MUltiply(a,b);
-        DIvide(a,b);
+       cout<< SUm(a,b);
+       cout<< SUbtract(a,b);
+       cout<< MUltiply(a,b);
+       cout<< DIvide(a,b);
     }
 
     return 0;
